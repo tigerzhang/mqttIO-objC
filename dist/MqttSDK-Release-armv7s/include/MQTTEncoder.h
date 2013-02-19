@@ -3,7 +3,7 @@
 //  MQtt Client
 //
 //  Created by Kyle Roche on 8/21/11.
-//  Copyright (c) 2011 2lemetry. All rights reserved.
+//  Copyright (c) 2011 2lemetry, LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
