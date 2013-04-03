@@ -28,29 +28,35 @@ typedef enum {
 @interface MQTTSession : NSObject {
     MQTTSessionStatus    status;
     NSString*            clientId;
-    NSString*            userName;
-    NSString*            password;
+    //NSString*            userName;
+    //NSString*            password;
     UInt16               keepAliveInterval;
     BOOL                 cleanSessionFlag;
+    MQTTMessage*         connectMessage;
     NSRunLoop*           runLoop;
     NSString*            runLoopMode;
     NSTimer*             timer;
     NSInteger            idleTimer;
     MQTTEncoder*         encoder;
     MQTTDecoder*         decoder;
-    NSMutableArray*      queue;
     UInt16               txMsgId;
     id                   delegate;
     NSMutableDictionary* txFlows;
     NSMutableDictionary* rxFlows;
-    NSMutableArray*      timerRing;
     unsigned int         ticks;
 }
 
 - (id)initWithClientId:(NSString*)theClientId;
+- (id)initWithClientId:(NSString*)theClientId runLoop:(NSRunLoop*)theRunLoop
+               forMode:(NSString*)theRunLoopMode;
 - (id)initWithClientId:(NSString*)theClientId
               userName:(NSString*)theUsername
               password:(NSString*)thePassword;
+- (id)initWithClientId:(NSString*)theClientId
+              userName:(NSString*)theUserName
+              password:(NSString*)thePassword
+               runLoop:(NSRunLoop*)theRunLoop
+               forMode:(NSString*)theRunLoopMode;
 - (id)initWithClientId:(NSString*)theClientId
               userName:(NSString*)theUsername
               password:(NSString*)thePassword
@@ -63,7 +69,34 @@ typedef enum {
           cleanSession:(BOOL)theCleanSessionFlag
                runLoop:(NSRunLoop*)theRunLoop
                forMode:(NSString*)theMode;
+- (id)initWithClientId:(NSString*)theClientId
+              userName:(NSString*)theUserName
+              password:(NSString*)thePassword
+             keepAlive:(UInt16)theKeepAliveInterval
+          cleanSession:(BOOL)theCleanSessionFlag
+             willTopic:(NSString*)willTopic
+               willMsg:(NSData*)willMsg
+               willQoS:(UInt8)willQoS
+        willRetainFlag:(BOOL)willRetainFlag;
+- (id)initWithClientId:(NSString*)theClientId
+              userName:(NSString*)theUserName
+              password:(NSString*)thePassword
+             keepAlive:(UInt16)theKeepAliveInterval
+          cleanSession:(BOOL)theCleanSessionFlag
+             willTopic:(NSString*)willTopic
+               willMsg:(NSData*)willMsg
+               willQoS:(UInt8)willQoS
+        willRetainFlag:(BOOL)willRetainFlag
+               runLoop:(NSRunLoop*)theRunLoop
+               forMode:(NSString*)theRunLoopMode;
+- (id)initWithClientId:(NSString*)theClientId
+             keepAlive:(UInt16)theKeepAliveInterval
+        connectMessage:(MQTTMessage*)theConnectMessage
+               runLoop:(NSRunLoop*)theRunLoop
+               forMode:(NSString*)theRunLoopMode;
+
 - (void)dealloc;
+- (void)close;
 - (void)setDelegate:aDelegate;
 - (void)connectToHost:(NSString*)ip port:(UInt32)port;
 - (void)subscribeTopic:(NSString*)theTopic;
@@ -92,6 +125,9 @@ typedef enum {
 - (void)handlePubcomp:(MQTTMessage*)msg;
 - (void)send:(MQTTMessage*)msg;
 - (UInt16)nextMsgId;
+
+@property (strong,atomic) NSMutableArray* queue;
+@property (strong,atomic) NSMutableArray* timerRing;
 
 @end
 

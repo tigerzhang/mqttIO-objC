@@ -13,7 +13,6 @@
     UInt8    qos;
     BOOL     retainFlag;
     BOOL     dupFlag;
-    NSData*  data;
 }
 
 enum {
@@ -39,6 +38,16 @@ enum {
                         password:(NSString*)password
                        keepAlive:(NSInteger)keeplive
                     cleanSession:(BOOL)cleanSessionFlag;
++ (id)connectMessageWithClientId:(NSString*)clientId
+                        userName:(NSString*)userName
+                        password:(NSString*)password
+                       keepAlive:(NSInteger)keeplive
+                    cleanSession:(BOOL)cleanSessionFlag
+                       willTopic:(NSString*)willTopic
+                         willMsg:(NSData*)willData
+                         willQoS:(UInt8)willQoS
+                      willRetain:(BOOL)willRetainFlag;
+
 + (id)pingreqMessage;
 + (id)subscribeMessageWithMessageId:(UInt16)msgId
                               topic:(NSString*)topic
@@ -74,8 +83,7 @@ enum {
 - (UInt8)qos;
 - (BOOL)retainFlag;
 - (BOOL)isDuplicate;
-- (NSData*)data;
-- (void)dealloc;
+@property (strong,nonatomic) NSData * data;
 
 @end
 

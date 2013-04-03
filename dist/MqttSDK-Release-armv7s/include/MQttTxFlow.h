@@ -19,7 +19,6 @@
 - (void)setDeadline:(unsigned int)newValue;
 - (MQTTMessage*)msg;
 - (unsigned int)deadline;
-- (void)dealloc;
 
 @end
 

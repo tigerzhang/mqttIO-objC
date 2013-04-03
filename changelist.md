@@ -1,5 +1,5 @@
 # Changelist for this version
 
- - QoS level 1 and 2 support
- - LWT parameters for session 
- - Example project for Armv7s added.
+ - Crash Fixed for reconnection on connection loss
+ - Memory leaks removed by usage of ARC
+ - Added Mac library for x86_64 
