@@ -22,8 +22,6 @@
 		F396EAB31577D0D2006A1D34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F396EA911577D0D2006A1D34 /* Foundation.framework */; };
 		F396EABB1577D0D2006A1D34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F396EAB91577D0D2006A1D34 /* InfoPlist.strings */; };
 		F396EABE1577D0D2006A1D34 /* HelloMQTTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EABD1577D0D2006A1D34 /* HelloMQTTTests.m */; };
-		F396EADA1577D1C6006A1D34 /* libMqttSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F396EAD21577D1C6006A1D34 /* libMqttSDK.a */; };
-		F396EADB1577D1C6006A1D34 /* libMqttSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F396EAD91577D1C6006A1D34 /* libMqttSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F331F840170EBB4B00DD980A /* MQttTxFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQttTxFlow.h; sourceTree = "<group>"; };
+		F331F841170EBB5700DD980A /* MQttTxFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQttTxFlow.h; sourceTree = "<group>"; };
 		F3512192163E9EA800F5ECD4 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
 		F3512193163E9EA800F5ECD4 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
 		F3512194163E9EA800F5ECD4 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
@@ -66,16 +66,6 @@
 		F396EABA1577D0D2006A1D34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F396EABC1577D0D2006A1D34 /* HelloMQTTTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloMQTTTests.h; sourceTree = "<group>"; };
 		F396EABD1577D0D2006A1D34 /* HelloMQTTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloMQTTTests.m; sourceTree = "<group>"; };
-		F396EACE1577D1C6006A1D34 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
-		F396EACF1577D1C6006A1D34 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
-		F396EAD01577D1C6006A1D34 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
-		F396EAD11577D1C6006A1D34 /* MQTTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSession.h; sourceTree = "<group>"; };
-		F396EAD21577D1C6006A1D34 /* libMqttSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMqttSDK.a; sourceTree = "<group>"; };
-		F396EAD51577D1C6006A1D34 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
-		F396EAD61577D1C6006A1D34 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
-		F396EAD71577D1C6006A1D34 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
-		F396EAD81577D1C6006A1D34 /* MQTTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSession.h; sourceTree = "<group>"; };
-		F396EAD91577D1C6006A1D34 /* libMqttSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMqttSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +76,6 @@
 				F396EA901577D0D2006A1D34 /* UIKit.framework in Frameworks */,
 				F396EA921577D0D2006A1D34 /* Foundation.framework in Frameworks */,
 				F396EA941577D0D2006A1D34 /* CoreGraphics.framework in Frameworks */,
-				F396EADA1577D1C6006A1D34 /* libMqttSDK.a in Frameworks */,
-				F396EADB1577D1C6006A1D34 /* libMqttSDK.a in Frameworks */,
 				F351219E163E9EA800F5ECD4 /* libMqttSDK.a in Frameworks */,
 				F351219F163E9EA900F5ECD4 /* libMqttSDK.a in Frameworks */,
 			);
@@ -118,9 +106,10 @@
 		F3512191163E9EA800F5ECD4 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				F331F840170EBB4B00DD980A /* MQttTxFlow.h */,
 				F3512192163E9EA800F5ECD4 /* MQTTDecoder.h */,
-				F3512193163E9EA800F5ECD4 /* MQTTEncoder.h */,
 				F3512194163E9EA800F5ECD4 /* MQTTMessage.h */,
+				F3512193163E9EA800F5ECD4 /* MQTTEncoder.h */,
 				F3512195163E9EA800F5ECD4 /* MQTTSession.h */,
 			);
 			path = include;
@@ -138,6 +127,7 @@
 		F3512198163E9EA800F5ECD4 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				F331F841170EBB5700DD980A /* MQttTxFlow.h */,
 				F3512199163E9EA800F5ECD4 /* MQTTDecoder.h */,
 				F351219A163E9EA800F5ECD4 /* MQTTEncoder.h */,
 				F351219B163E9EA800F5ECD4 /* MQTTMessage.h */,
@@ -225,50 +215,8 @@
 			children = (
 				F3512190163E9EA800F5ECD4 /* MqttSDK-Debug-armv7s */,
 				F3512197163E9EA800F5ECD4 /* MqttSDK-Release-armv7s */,
-				F396EACC1577D1C6006A1D34 /* MqttSDK-Debug */,
-				F396EAD31577D1C6006A1D34 /* MqttSDK-Release */,
 			);
 			name = "mqtt-lib";
-			sourceTree = "<group>";
-		};
-		F396EACC1577D1C6006A1D34 /* MqttSDK-Debug */ = {
-			isa = PBXGroup;
-			children = (
-				F396EACD1577D1C6006A1D34 /* include */,
-				F396EAD21577D1C6006A1D34 /* libMqttSDK.a */,
-			);
-			path = "MqttSDK-Debug";
-			sourceTree = "<group>";
-		};
-		F396EACD1577D1C6006A1D34 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				F396EACE1577D1C6006A1D34 /* MQTTDecoder.h */,
-				F396EACF1577D1C6006A1D34 /* MQTTEncoder.h */,
-				F396EAD01577D1C6006A1D34 /* MQTTMessage.h */,
-				F396EAD11577D1C6006A1D34 /* MQTTSession.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		F396EAD31577D1C6006A1D34 /* MqttSDK-Release */ = {
-			isa = PBXGroup;
-			children = (
-				F396EAD41577D1C6006A1D34 /* include */,
-				F396EAD91577D1C6006A1D34 /* libMqttSDK.a */,
-			);
-			path = "MqttSDK-Release";
-			sourceTree = "<group>";
-		};
-		F396EAD41577D1C6006A1D34 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				F396EAD51577D1C6006A1D34 /* MQTTDecoder.h */,
-				F396EAD61577D1C6006A1D34 /* MQTTEncoder.h */,
-				F396EAD71577D1C6006A1D34 /* MQTTMessage.h */,
-				F396EAD81577D1C6006A1D34 /* MQTTSession.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,11 +432,7 @@
 				INFOPLIST_FILE = "HelloMQTT/HelloMQTT-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/MqttSDK-Debug\"",
-					"\"$(SRCROOT)/MqttSDK-Release\"",
 					"\"$(SRCROOT)/MqttSDK-Debug-armv7s\"",
-					"\"$(SRCROOT)/MqttSDK-Release-armv7s\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -504,10 +448,6 @@
 				INFOPLIST_FILE = "HelloMQTT/HelloMQTT-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/MqttSDK-Debug\"",
-					"\"$(SRCROOT)/MqttSDK-Release\"",
-					"\"$(SRCROOT)/MqttSDK-Debug-armv7s\"",
 					"\"$(SRCROOT)/MqttSDK-Release-armv7s\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

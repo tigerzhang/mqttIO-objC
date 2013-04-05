@@ -3,17 +3,16 @@
 //  MQtt Client
 //
 //  Created by Kyle Roche on 8/21/11.
-//  Copyright (c) 2011 Demand Results. All rights reserved.
+//  Copyright (c) 2011 2lemetry, LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface MQTTMessage : NSObject {
-    UInt8           type;
-    UInt8           qos;
-    BOOL            retainFlag;
-    BOOL            dupFlag;
-    NSMutableData*  data;
+    UInt8    type;
+    UInt8    qos;
+    BOOL     retainFlag;
+    BOOL     dupFlag;
 }
 
 enum {
@@ -39,28 +38,52 @@ enum {
                         password:(NSString*)password
                        keepAlive:(NSInteger)keeplive
                     cleanSession:(BOOL)cleanSessionFlag;
++ (id)connectMessageWithClientId:(NSString*)clientId
+                        userName:(NSString*)userName
+                        password:(NSString*)password
+                       keepAlive:(NSInteger)keeplive
+                    cleanSession:(BOOL)cleanSessionFlag
+                       willTopic:(NSString*)willTopic
+                         willMsg:(NSData*)willData
+                         willQoS:(UInt8)willQoS
+                      willRetain:(BOOL)willRetainFlag;
+
 + (id)pingreqMessage;
 + (id)subscribeMessageWithMessageId:(UInt16)msgId
                               topic:(NSString*)topic
                                 qos:(UInt8)qos;
 + (id)unsubscribeMessageWithMessageId:(UInt16)msgId
                                 topic:(NSString*)topic;
++ (id)publishMessageWithData:(NSData*)payload
+                     onTopic:(NSString*)theTopic
+                     retainFlag:(BOOL)retain;
++ (id)publishMessageWithData:(NSData*)payload
+                     onTopic:(NSString*)topic
+                         qos:(UInt8)qosLevel
+                       msgId:(UInt16)msgId
+                  retainFlag:(BOOL)retain
+                     dupFlag:(BOOL)dup;
++ (id)pubackMessageWithMessageId:(UInt16)msgId;
++ (id)pubrecMessageWithMessageId:(UInt16)msgId;
++ (id)pubrelMessageWithMessageId:(UInt16)msgId;
++ (id)pubcompMessageWithMessageId:(UInt16)msgId;
+
 - (id)initWithType:(UInt8)aType;
-- (id)initWithType:(UInt8)aType data:(NSMutableData*)aData;
+- (id)initWithType:(UInt8)aType data:(NSData*)aData;
 - (id)initWithType:(UInt8)aType
                qos:(UInt8)aQos
-              data:(NSMutableData*)aData;
+              data:(NSData*)aData;
 - (id)initWithType:(UInt8)aType
                qos:(UInt8)aQos
         retainFlag:(BOOL)aRetainFlag
-         duplicate:(BOOL)aDupFlag
-              data:(NSMutableData*)aData;
+           dupFlag:(BOOL)aDupFlag
+              data:(NSData*)aData;
+- (void)setDupFlag;
 - (UInt8)type;
 - (UInt8)qos;
 - (BOOL)retainFlag;
 - (BOOL)isDuplicate;
-- (NSMutableData*)data;
-- (void)dealloc;
+@property (strong,nonatomic) NSData * data;
 
 @end
 
