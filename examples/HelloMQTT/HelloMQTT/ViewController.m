@@ -186,6 +186,7 @@
         [connectButton setTitle:@"Disconnect" forState:UIControlStateNormal];
         connecting = YES;
     } else {
+        [session close];
         session = nil;
         [connectButton setTitle:@"Connect" forState:UIControlStateNormal];
         connecting = NO;
