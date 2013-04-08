@@ -1,3 +1,4 @@
-examples/HelloMQTT/HelloMQTT.xcodeproj/project.xcworkspace
-examples/HelloMQTT/HelloMQTT.xcodeproj/xcuserdata
+*project.xcworkspace
+*xcuserdata
 *.DS_Store
+*DerivedData
