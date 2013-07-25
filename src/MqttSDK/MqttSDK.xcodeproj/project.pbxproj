@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8563C0DE170BFB5C0014CACA /* MQttTxFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8563C0DC170BFB5C0014CACA /* MQttTxFlow.h */; };
-		8563C0DF170BFB5D0014CACA /* MQttTxFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563C0DD170BFB5C0014CACA /* MQttTxFlow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8563C0DF170BFB5D0014CACA /* MQttTxFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563C0DD170BFB5C0014CACA /* MQttTxFlow.m */; };
 		8563C0E5170C0AAF0014CACA /* MQttTxFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563C0DD170BFB5C0014CACA /* MQttTxFlow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8563C0E6170C0AAF0014CACA /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2A1577D9DB006A1D34 /* MQTTDecoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8563C0E7170C0AAF0014CACA /* MQTTEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2C1577D9DB006A1D34 /* MQTTEncoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -21,13 +21,13 @@
 		F396EB1D1577D9A4006A1D34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F396EB1B1577D9A4006A1D34 /* InfoPlist.strings */; };
 		F396EB201577D9A4006A1D34 /* MqttSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB1F1577D9A4006A1D34 /* MqttSDKTests.m */; };
 		F396EB311577D9DB006A1D34 /* MQTTDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F396EB291577D9DB006A1D34 /* MQTTDecoder.h */; };
-		F396EB321577D9DB006A1D34 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2A1577D9DB006A1D34 /* MQTTDecoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F396EB321577D9DB006A1D34 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2A1577D9DB006A1D34 /* MQTTDecoder.m */; };
 		F396EB331577D9DB006A1D34 /* MQTTEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F396EB2B1577D9DB006A1D34 /* MQTTEncoder.h */; };
-		F396EB341577D9DB006A1D34 /* MQTTEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2C1577D9DB006A1D34 /* MQTTEncoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F396EB341577D9DB006A1D34 /* MQTTEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2C1577D9DB006A1D34 /* MQTTEncoder.m */; };
 		F396EB351577D9DB006A1D34 /* MQTTMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F396EB2D1577D9DB006A1D34 /* MQTTMessage.h */; };
-		F396EB361577D9DB006A1D34 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2E1577D9DB006A1D34 /* MQTTMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F396EB361577D9DB006A1D34 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB2E1577D9DB006A1D34 /* MQTTMessage.m */; };
 		F396EB371577D9DB006A1D34 /* MQTTSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F396EB2F1577D9DB006A1D34 /* MQTTSession.h */; };
-		F396EB381577D9DB006A1D34 /* MQTTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB301577D9DB006A1D34 /* MQTTSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F396EB381577D9DB006A1D34 /* MQTTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F396EB301577D9DB006A1D34 /* MQTTSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
