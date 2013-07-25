@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F301ED0817A102ED00FF8747 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F301ED0717A102ED00FF8747 /* CFNetwork.framework */; };
 		F351219E163E9EA800F5ECD4 /* libMqttSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3512196163E9EA800F5ECD4 /* libMqttSDK.a */; };
 		F351219F163E9EA900F5ECD4 /* libMqttSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F351219D163E9EA800F5ECD4 /* libMqttSDK.a */; };
 		F396EA901577D0D2006A1D34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F396EA8F1577D0D2006A1D34 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F301ED0717A102ED00FF8747 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F3512192163E9EA800F5ECD4 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
 		F3512193163E9EA800F5ECD4 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
 		F3512194163E9EA800F5ECD4 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F301ED0817A102ED00FF8747 /* CFNetwork.framework in Frameworks */,
 				F396EA901577D0D2006A1D34 /* UIKit.framework in Frameworks */,
 				F396EA921577D0D2006A1D34 /* Foundation.framework in Frameworks */,
 				F396EA941577D0D2006A1D34 /* CoreGraphics.framework in Frameworks */,
@@ -159,6 +162,7 @@
 		F396EA8E1577D0D2006A1D34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F301ED0717A102ED00FF8747 /* CFNetwork.framework */,
 				F396EA8F1577D0D2006A1D34 /* UIKit.framework */,
 				F396EA911577D0D2006A1D34 /* Foundation.framework */,
 				F396EA931577D0D2006A1D34 /* CoreGraphics.framework */,

@@ -29,6 +29,7 @@
 		85A82CDC170C18DB008AD870 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A82CD5170C18DB008AD870 /* MQTTMessage.m */; };
 		85A82CDD170C18DB008AD870 /* MQTTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A82CD7170C18DB008AD870 /* MQTTSession.m */; };
 		85A82CDE170C18DB008AD870 /* MQttTxFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A82CD9170C18DB008AD870 /* MQttTxFlow.m */; };
+		F301ED0A17A1048A00FF8747 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F301ED0917A1048A00FF8747 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		85A82CD7170C18DB008AD870 /* MQTTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MQTTSession.m; path = ../../src/MqttSDK/MQTTSession.m; sourceTree = "<group>"; };
 		85A82CD8170C18DB008AD870 /* MQttTxFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MQttTxFlow.h; path = ../../src/MqttSDK/MQttTxFlow.h; sourceTree = "<group>"; };
 		85A82CD9170C18DB008AD870 /* MQttTxFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MQttTxFlow.m; path = ../../src/MqttSDK/MQttTxFlow.m; sourceTree = "<group>"; };
+		F301ED0917A1048A00FF8747 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F301ED0A17A1048A00FF8747 /* CFNetwork.framework in Frameworks */,
 				85A82C93170C18B6008AD870 /* UIKit.framework in Frameworks */,
 				85A82C95170C18B6008AD870 /* Foundation.framework in Frameworks */,
 				85A82C97170C18B6008AD870 /* CoreGraphics.framework in Frameworks */,
@@ -124,6 +127,7 @@
 		85A82C91170C18B6008AD870 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F301ED0917A1048A00FF8747 /* CFNetwork.framework */,
 				85A82C92170C18B6008AD870 /* UIKit.framework */,
 				85A82C94170C18B6008AD870 /* Foundation.framework */,
 				85A82C96170C18B6008AD870 /* CoreGraphics.framework */,
